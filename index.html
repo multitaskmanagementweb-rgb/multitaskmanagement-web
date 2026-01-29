@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Home loans, property finder, and painting services in Sydney. Simple, modern, mobile-friendly website." />
+  <meta name="description" content="Home loans, property finder, and painting services in Sydney." />
   <title>Your Business | Home Loans • Property Finder • Painting (Sydney)</title>
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Skip link for accessibility -->
   <a class="skip-link" href="#home">Skip to content</a>
 
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <div class="nav__inner container">
         <a class="brand" href="#home" aria-label="Go to Home">
-          <span class="brand__mark" aria-hidden="true">■</span>
+          <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__text">Your Business</span>
           <span class="brand__sub">Sydney</span>
         </a>
@@ -31,21 +29,19 @@
           <li><a class="nav__link" href="#services">Services</a></li>
           <li><a class="nav__link" href="#about">About</a></li>
           <li><a class="nav__link" href="#contact">Contact</a></li>
-          <li class="nav__cta">
-            <a class="btn btn--primary" href="#contact">Get a quote</a>
-          </li>
+          <li class="nav__cta"><a class="btn btn--primary" href="#contact">Get a quote</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- HERO / HOME -->
+    <!-- HOME -->
     <section id="home" class="section hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow">Simple. Clear. Results-focused.</p>
-          <h1>Home loans, property finding, and painting—done right in Sydney.</h1>
+          <p class="eyebrow">Sydney • Simple • Reliable</p>
+          <h1>Home loans, property finding, and painting—made easy.</h1>
           <p class="lead">
             One team for your next move: finance options, smart property selection using data,
             and professional painting to finish the job.
@@ -57,38 +53,24 @@
           </div>
 
           <ul class="hero__highlights" aria-label="Key highlights">
-            <li><strong>Home Loans</strong> for first home, upgrade, investment & commercial</li>
-            <li><strong>Property Finder</strong> with cashflow + growth analysis</li>
+            <li><strong>Home Loans</strong> for first home, investment & commercial</li>
+            <li><strong>Property Finder</strong> with cashflow + capital growth focus</li>
             <li><strong>Painting</strong> affordable rates across Sydney</li>
           </ul>
         </div>
 
-        <div class="hero__card" role="presentation" aria-hidden="true">
-          <div class="card card--hero">
-            <div class="card__top">
-              <div class="chip">Sydney</div>
-              <div class="chip chip--soft">Mobile-friendly</div>
-            </div>
-            <h3>Fast answers. Clean process.</h3>
-            <p>
-              Tell us your goal and we’ll guide you with clear options, practical advice, and a simple plan.
-            </p>
-            <div class="stats">
-              <div class="stat">
-                <div class="stat__num">3</div>
-                <div class="stat__label">Core services</div>
-              </div>
-              <div class="stat">
-                <div class="stat__num">30+</div>
-                <div class="stat__label">Growth factors checked</div>
-              </div>
-              <div class="stat">
-                <div class="stat__num">1</div>
-                <div class="stat__label">Point of contact</div>
-              </div>
-            </div>
-            <a class="btn btn--primary btn--full" href="#contact">Request a callback</a>
-          </div>
+        <div class="hero__media" aria-label="Service images">
+          <figure class="media-card">
+            <img src="images/loan.png" alt="Home loan consultation with a house model" loading="eager" />
+            <figcaption>
+              <span class="chip">Home loans</span>
+              <span class="muted small">Residential • Investment • Commercial</span>
+            </figcaption>
+          </figure>
+
+          <figure class="media-card media-card--small">
+            <img src="images/loan1.png" alt="Loan and investment visual" loading="lazy" />
+          </figure>
         </div>
       </div>
     </section>
@@ -98,17 +80,17 @@
       <div class="container">
         <header class="section__header">
           <h2>Services</h2>
-          <p class="muted">Choose one service or combine them—finance + property + paint for a complete solution.</p>
+          <p class="muted">Simple, clear services you can use individually or together.</p>
         </header>
 
         <div class="grid cards">
           <!-- Home Loans -->
           <article class="card">
-            <div class="card__icon" aria-hidden="true">🏦</div>
+            <div class="card__media">
+              <img src="images/loan.png" alt="Home loan service" loading="lazy" />
+            </div>
             <h3>Home loans</h3>
-            <p>
-              Residential and commercial loan support with guidance across:
-            </p>
+            <p>Residential and commercial loan support across:</p>
             <ul class="list">
               <li>First home buyers</li>
               <li>Owner-occupier upgrades</li>
@@ -116,13 +98,14 @@
               <li>Refinancing & restructuring</li>
               <li>Commercial lending options</li>
             </ul>
-            <p class="muted small">We’ll help you understand options, costs, and next steps clearly.</p>
             <a class="link" href="#contact">Enquire about loans →</a>
           </article>
 
           <!-- Property Finder -->
           <article class="card">
-            <div class="card__icon" aria-hidden="true">📍</div>
+            <div class="card__media">
+              <img src="images/property-finder.png" alt="Property finder service" loading="lazy" />
+            </div>
             <h3>Property finder</h3>
             <p>
               For principal place of residence (PPOR) or investment properties—backed by analysis.
@@ -134,19 +117,21 @@
               <li>Risk checks and suburb review</li>
               <li>30+ property growth factors reviewed</li>
             </ul>
-            <p class="muted small">
-              You get a shortlist that matches your goals—not a long list of random listings.
-            </p>
+
+            <div class="mini-media">
+              <img src="images/property-finder1.png" alt="City skyline image for property finder" loading="lazy" />
+            </div>
+
             <a class="link" href="#contact">Find a property →</a>
           </article>
 
           <!-- Painting -->
           <article class="card">
-            <div class="card__icon" aria-hidden="true">🎨</div>
+            <div class="card__media">
+              <img src="images/paint.jpg" alt="Painter working on a wall" loading="lazy" />
+            </div>
             <h3>Painting in Sydney</h3>
-            <p>
-              We colour your dream home and buildings with affordable rates in Sydney.
-            </p>
+            <p>We colour your dream home and buildings for the most affordable rates in Sydney.</p>
             <ul class="list">
               <li>Interior & exterior painting</li>
               <li>Walls, ceilings, trims, feature walls</li>
@@ -154,7 +139,13 @@
               <li>Surface preparation & tidy finishes</li>
               <li>Flexible scheduling</li>
             </ul>
-            <p class="muted small">Share photos and we can provide a quick estimate.</p>
+
+            <div class="gallery" aria-label="Painting gallery">
+              <img src="images/paint1.jpg" alt="Painting tools and brushes" loading="lazy" />
+              <img src="images/paint2.jpg" alt="Painter applying paint to a wall" loading="lazy" />
+              <img src="images/paint3.jpg" alt="Customer handover scene" loading="lazy" />
+            </div>
+
             <a class="link" href="#contact">Request a paint quote →</a>
           </article>
         </div>
@@ -162,9 +153,7 @@
         <div class="callout">
           <div>
             <h3>Want an end-to-end plan?</h3>
-            <p class="muted">
-              Home loan + property selection + finishing touches. Keep it simple with one coordinated workflow.
-            </p>
+            <p class="muted">Home loan + property selection + finishing touches — one coordinated workflow.</p>
           </div>
           <a class="btn btn--primary" href="#contact">Talk to us</a>
         </div>
@@ -173,45 +162,42 @@
 
     <!-- ABOUT -->
     <section id="about" class="section section--alt">
-      <div class="container about">
+      <div class="container">
         <header class="section__header">
           <h2>About</h2>
-          <p class="muted">
-            We’re a Sydney-based team focused on clear communication, practical advice, and quality delivery.
-          </p>
+          <p class="muted">Sydney-based team focused on clarity, practical advice, and quality work.</p>
         </header>
 
         <div class="about__grid">
-          <div class="about__text">
-            <p>
-              Our goal is to make your next step easier—whether that’s securing the right finance,
-              selecting a property with confidence, or transforming a home with fresh paint.
+          <div class="card">
+            <h3>How we help</h3>
+            <p class="muted">
+              We make your next step easier—whether it’s securing the right finance, selecting a property
+              with confidence, or transforming your home with fresh paint.
             </p>
-            <p>
-              For property finding, we don’t just “send listings”. We review data and fundamentals, including
-              cashflow and capital growth, and assess over 30+ growth factors to build a clean shortlist.
+            <p class="muted">
+              For Property Finder, we provide a shortlist based on cashflow + capital growth and check
+              30+ growth factors so you can choose with confidence.
             </p>
             <div class="pillrow" aria-label="What we value">
               <span class="pill">Transparent advice</span>
-              <span class="pill">Mobile-first experience</span>
-              <span class="pill">Clean workmanship</span>
               <span class="pill">Fast response</span>
+              <span class="pill">Data-driven shortlist</span>
+              <span class="pill">Clean workmanship</span>
             </div>
           </div>
 
-          <div class="about__box">
-            <div class="box">
-              <h3>Service areas</h3>
-              <p class="muted">Sydney and surrounding suburbs.</p>
-              <hr />
-              <h3>How we work</h3>
-              <ol class="steps">
-                <li>Tell us your goal</li>
-                <li>We recommend the best approach</li>
-                <li>We deliver a clear next step</li>
-              </ol>
-              <a class="btn btn--ghost btn--full" href="#contact">Contact now</a>
-            </div>
+          <div class="card">
+            <h3>Service area</h3>
+            <p class="muted">Sydney and surrounding suburbs.</p>
+            <hr />
+            <h3>Simple process</h3>
+            <ol class="steps">
+              <li>Tell us your goal</li>
+              <li>We recommend the best approach</li>
+              <li>We deliver a clear next step</li>
+            </ol>
+            <a class="btn btn--ghost btn--full" href="#contact">Contact now</a>
           </div>
         </div>
       </div>
@@ -222,15 +208,13 @@
       <div class="container">
         <header class="section__header">
           <h2>Contact</h2>
-          <p class="muted">Send an enquiry via email. Your mail app will open with the details pre-filled.</p>
+          <p class="muted">Send an enquiry via email (mailto). Your mail app will open with details pre-filled.</p>
         </header>
 
         <div class="contact__grid">
           <div class="card">
             <h3>Quick contact</h3>
-            <p class="muted">
-              Prefer a callback? Include your phone number and best time to call in the message.
-            </p>
+            <p class="muted">Include your phone number + best time to call in the message.</p>
 
             <div class="contact__details">
               <div class="detail">
@@ -243,41 +227,37 @@
               </div>
             </div>
 
-            <p class="muted small">
-              Tip: replace the email above with your real business email in the HTML.
-            </p>
+            <p class="muted small">Tip: replace the email above with your real business email.</p>
           </div>
 
           <form class="card form" id="contactForm">
             <div class="form__row">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+              <input id="name" type="text" autocomplete="name" required placeholder="Your name" />
             </div>
 
             <div class="form__row">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required />
+              <input id="email" type="email" autocomplete="email" required placeholder="you@email.com" />
             </div>
 
             <div class="form__row">
               <label for="service">Service</label>
-              <select id="service" name="service">
-                <option value="Home loans">Home loans</option>
-                <option value="Property finder">Property finder</option>
-                <option value="Painting">Painting in Sydney</option>
-                <option value="General">General enquiry</option>
+              <select id="service">
+                <option>Home loans</option>
+                <option>Property finder</option>
+                <option>Painting in Sydney</option>
+                <option>General enquiry</option>
               </select>
             </div>
 
             <div class="form__row">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+              <textarea id="message" rows="5" required placeholder="Tell us what you need..."></textarea>
             </div>
 
             <button class="btn btn--primary" type="submit">Send via email</button>
-            <p class="muted small">
-              This form uses <code>mailto:</code> (no server). If nothing happens, check your default mail app.
-            </p>
+            <p class="muted small">This form uses <code>mailto:</code> (no server).</p>
           </form>
         </div>
       </div>
@@ -286,9 +266,9 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__brand">
+      <div>
         <div class="brand brand--footer">
-          <span class="brand__mark" aria-hidden="true">■</span>
+          <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__text">Your Business</span>
           <span class="brand__sub">Sydney</span>
         </div>
