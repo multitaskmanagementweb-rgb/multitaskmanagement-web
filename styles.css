@@ -1,14 +1,14 @@
 :root{
-  --bg:#f6f7fb;
+  --bg:#f4f6f5;
   --panel:#ffffff;
-  --text:#111827;
+  --text:#1f2933;
   --muted:#4b5563;
   --faint:#6b7280;
-  --border:rgba(17,24,39,.12);
-  --shadow:0 18px 45px rgba(17,24,39,.10);
+  --border:rgba(31,41,51,.15);
+  --shadow:0 18px 45px rgba(0,0,0,.08);
 
-  --accent:#2563eb;
-  --accent2:#7c3aed;
+  --accent:#2e7d32;   /* green */
+  --accent2:#6b7280;  /* grey */
 
   --radius:18px;
   --radius-sm:12px;
@@ -17,6 +17,7 @@
 
   --font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
 }
+
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -106,8 +107,9 @@ body{
 .media-card--small img{height:160px}
 .media-card figcaption{padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
 
-.chip{padding:6px 10px;border-radius:999px;font-weight:900;font-size:12px;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2))}
-
+.chip{
+  background:linear-gradient(135deg,var(--accent), #43a047);
+}
 .mini-media{border-radius:14px;overflow:hidden;border:1px solid var(--border);margin:10px 0 8px}
 .mini-media img{width:100%;height:110px;object-fit:cover;display:block}
 
@@ -149,7 +151,12 @@ input:focus,select:focus,textarea:focus{border-color:rgba(37,99,235,.55);box-sha
   padding:11px 14px;border-radius:12px;font-weight:900;
   text-decoration:none;border:1px solid var(--border);cursor:pointer;user-select:none;
 }
-.btn--primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-color:transparent}
+.btn--primary{
+  background:linear-gradient(135deg,var(--accent), #43a047);
+  color:#fff;
+  border-color:transparent;
+}
+
 .btn--ghost{background:#fff;color:var(--text)}
 .btn--full{width:100%}
 
@@ -176,3 +183,32 @@ input:focus,select:focus,textarea:focus{border-color:rgba(37,99,235,.55);box-sha
   .nav__link{padding:12px}
   .gallery{grid-template-columns:1fr 1fr}
 }
+
+.brand{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+}
+
+.brand__logo{
+  height:42px;
+  width:auto;
+  object-fit:contain;
+  display:block;
+}
+
+.brand__logo--footer{
+  height:34px;
+}
+
+@media (max-width:740px){
+  .brand__logo{ height:34px; }
+}
+
+.contact-actions{
+  display:grid;
+  gap:12px;
+  margin-top:14px;
+}
+
+
