@@ -191,31 +191,34 @@ input:focus,select:focus,textarea:focus{border-color:rgba(37,99,235,.55);box-sha
   text-decoration:none;
 }
 
-.brand__logo{
-  height:120px;          /* 3x size */
-  width:auto;
-  object-fit:contain;
-  display:block;
+/* FORCE logo size – override everything */
+.brand__logo {
+  height: 160px !important;
+  max-height: none !important;
+  width: auto !important;
 }
 
-/* Footer logo slightly smaller */
-.brand__logo--footer{
-  height:70px;
+/* Make navbar tall enough */
+.site-header {
+  min-height: 160px;
 }
 
-/* Tablet */
-@media (max-width:980px){
-  .brand__logo{
-    height:90px;
-  }
+.nav__inner {
+  min-height: 160px;
+  align-items: center;
 }
 
 /* Mobile */
-@media (max-width:740px){
-  .brand__logo{
-    height:70px;
+@media (max-width: 740px) {
+  .brand__logo {
+    height: 110px !important;
+  }
+  .site-header,
+  .nav__inner {
+    min-height: 120px;
   }
 }
+
 
 
 .contact-actions{
