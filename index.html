@@ -13,7 +13,6 @@
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <div class="nav__inner container">
-        <!-- LOGO -->
         <a class="brand" href="#home" aria-label="Go to Home">
           <img src="images/logo.png" alt="Multi Task Management logo" class="brand__logo" />
         </a>
@@ -35,7 +34,7 @@
   </header>
 
   <main>
-    <!-- HOME (Catchy, colourful first page) -->
+    <!-- HOME -->
     <section id="home" class="section hero hero--vibrant">
       <div class="hero-bg" aria-hidden="true">
         <div class="blob blob--a"></div>
@@ -45,6 +44,7 @@
       </div>
 
       <div class="container hero__grid">
+        <!-- LEFT -->
         <div class="hero__content">
           <p class="eyebrow eyebrow--bright">Finance it. Find it. Fix it.</p>
 
@@ -53,8 +53,8 @@
           </h1>
 
           <p class="hero__caption">
-            From financing to finding the right property — and upgrading it beautifully —
-            we coordinate the moving parts so you get a smoother, faster outcome.
+            We coordinate finance, property selection, and home improvements—so you get a smoother,
+            faster outcome with less stress.
           </p>
 
           <p class="hero__summary">
@@ -69,11 +69,39 @@
             <a class="btn btn--ghost btn--lift" href="#contact">Contact us</a>
           </div>
 
+          <div class="hero__stats" aria-label="Key highlights">
+            <div class="stat-card">
+              <div class="stat-top">30+</div>
+              <div class="stat-sub">growth factors checked</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-top">End-to-End</div>
+              <div class="stat-sub">finance → property → improvements</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-top">Australia</div>
+              <div class="stat-sub">nationwide finance & finder</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
         <div class="hero__media" aria-label="Service images">
           <figure class="media-card media-card--glow">
             <img src="images/Loan.png" alt="Home loan consultation with a house model" loading="eager" />
+            <figcaption>
+              <span class="chip">Home loans</span>
+              <span class="muted small">Residential • Investment • Commercial</span>
+            </figcaption>
           </figure>
 
+          <figure class="media-card media-card--small media-card--glow">
+            <img src="images/property-finder.png" alt="Property finder service" loading="lazy" />
+            <figcaption>
+              <span class="chip chip--alt">Property finder</span>
+              <span class="muted small">Cashflow + growth focus</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
 
@@ -101,6 +129,11 @@
             <div class="strip-sub">Renovations • Painting • Tiling • Cosmetic</div>
           </div>
         </div>
+      </div>
+
+      <div class="container scroll-hint" aria-hidden="true">
+        <span class="scroll-dot"></span>
+        <span class="scroll-text">Scroll</span>
       </div>
     </section>
 
@@ -136,9 +169,7 @@
               <img src="images/property-finder.png" alt="Property finder service" loading="lazy" />
             </div>
             <h3>Property finder</h3>
-            <p>
-              For principal place of residence (PPOR) or investment properties—backed by analysis.
-            </p>
+            <p>For PPOR or investment properties—backed by analysis.</p>
             <ul class="list">
               <li>Cashflow and holding-cost review</li>
               <li>Capital growth focus</li>
@@ -172,6 +203,7 @@
             <div class="gallery" aria-label="Home improvements gallery">
               <img src="images/paint1.png" alt="Home improvement example 1" loading="lazy" />
               <img src="images/paint2.png" alt="Home improvement example 2" loading="lazy" />
+              <img src="images/paint3.png" alt="Home improvement example 3" loading="lazy" />
             </div>
 
             <a class="link" href="#contact">Request an improvements quote →</a>
@@ -193,20 +225,28 @@
       <div class="container">
         <header class="section__header">
           <h2>About</h2>
-          <p class="muted">Multi Task Management brings everything together so your property journey feels simpler, smarter, and more controlled. Instead of dealing with multiple providers, we coordinate finance, property selection, and home improvements under one clear strategy. From securing the right home loan, to finding properties with strong cashflow and capital growth potential, to upgrading homes through renovations, painting, tiling, and cosmetic improvements — we manage the moving parts so you don’t have to. Our approach is practical, data-driven, and outcome-focused, helping clients make confident decisions and achieve results with less stress and better clarity.</p>
+          <p class="muted">
+            Multi Task Management brings everything together so your property journey feels simpler, smarter, and more controlled.
+            Instead of dealing with multiple providers, we coordinate finance, property selection, and home improvements under one
+            clear strategy. From securing the right home loan, to finding properties with strong cashflow and capital growth potential,
+            to upgrading homes through renovations, painting, tiling, and cosmetic improvements — we manage the moving parts so you
+            don’t have to. Our approach is practical, data-driven, and outcome-focused, helping clients make confident decisions and
+            achieve results with less stress and better clarity.
+          </p>
         </header>
 
         <div class="about__grid">
           <div class="card">
             <h3>How we help</h3>
             <p class="muted">
-              We make your next step easier - whether it’s securing the right finance, selecting a property
+              We make your next step easier — whether it’s securing the right finance, selecting a property
               with confidence, or improving your home to look great and perform better.
             </p>
             <p class="muted">
               For Property Finder, we shortlist options based on cashflow + capital growth and check
               30+ growth factors so you can decide with confidence.
             </p>
+
             <div class="pillrow" aria-label="What we value">
               <span class="pill">Clear Strategy</span>
               <span class="pill">End-to-End</span>
@@ -217,7 +257,9 @@
 
           <div class="card">
             <h3>Service area</h3>
-            <p class="muted">We offer finance and property finder services Australia-wide, and home improvement services in the Sydney region.</p>
+            <p class="muted">
+              We offer finance and property finder services Australia-wide, and home improvement services in the Sydney region.
+            </p>
             <hr />
             <h3>Simple process</h3>
             <ol class="steps">
