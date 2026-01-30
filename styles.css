@@ -444,3 +444,24 @@ hr{border:none;border-top:1px solid var(--border);margin:12px 0}
   text-align: justify; /* optional: makes it fit left-to-right neatly */
   text-justify: inter-word;
 }
+
+/* HARD OVERRIDE: About intro must use full container width */
+#about .container { max-width: var(--container); }
+
+#about .section__header{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+#about .about-intro{
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+#about .section__header{max-width:100% !important;width:100% !important;}
+#about .about-intro{max-width:100% !important;width:100% !important;margin:0 !important;text-align:justify !important;hyphens:auto;}
