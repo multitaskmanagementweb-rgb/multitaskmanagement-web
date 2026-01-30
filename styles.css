@@ -424,3 +424,11 @@ hr{border:none;border-top:1px solid var(--border);margin:12px 0}
   .gallery{grid-template-columns:1fr 1fr}
   .media-card--small img{height:180px}
 }
+
+/* About section intro alignment fix */
+.about-intro {
+  max-width: 860px;
+  margin: 0 auto;        /* centers the block */
+  text-align: left;      /* keeps reading natural */
+  line-height: 1.7;
+}
