@@ -108,6 +108,24 @@ body{
   letter-spacing:-.3px;
 }
 
+/* ===== Fortune brand (ADDED) ===== */
+.brand-note{
+  margin: 0 0 8px;
+  font-weight: 900;
+  color: rgba(31,41,51,.78);
+}
+.brand-highlight{
+  display:inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 1100;
+  letter-spacing: .2px;
+  background: linear-gradient(135deg, var(--amber), var(--accent3), var(--accent));
+  box-shadow: 0 14px 28px rgba(46,125,50,.16);
+  border: 1px solid rgba(31,41,51,.10);
+}
+
 /* Hero */
 .hero{position:relative; overflow:hidden}
 .hero--vibrant{
@@ -195,24 +213,6 @@ body{
 }
 
 .hero__actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
-
-.hero__stats{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 10px;
-}
-.stat-card{
-  border:1px solid rgba(31,41,51,.12);
-  background: rgba(255,255,255,.86);
-  border-radius: 18px;
-  padding: 12px;
-  box-shadow: var(--shadow-soft);
-  transition: transform .18s ease;
-}
-.stat-card:hover{transform: translateY(-2px)}
-.stat-top{font-weight:1100; letter-spacing:-.3px}
-.stat-sub{margin-top:4px; color:var(--muted); font-size:12px; font-weight:900}
 
 /* Media cards */
 .hero__media{display:grid; gap:12px}
