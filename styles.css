@@ -425,43 +425,18 @@ hr{border:none;border-top:1px solid var(--border);margin:12px 0}
   .media-card--small img{height:180px}
 }
 
-/* About section intro alignment fix */
-.about-intro {
-  max-width: 860px;
-  margin: 0 auto;        /* centers the block */
-  text-align: left;      /* keeps reading natural */
-  line-height: 1.7;
-}
-/* ===== ABOUT: make intro fit full width (left-to-right) ===== */
-#about .section__header{
-  max-width: none;     /* removes 820px limit */
-}
-
-#about .about-intro{
-  max-width: none;     /* remove 860px limit */
-  margin: 0;           /* stop centering */
-  width: 100%;
-  text-align: justify; /* optional: makes it fit left-to-right neatly */
-  text-justify: inter-word;
-}
-
-/* HARD OVERRIDE: About intro must use full container width */
-#about .container { max-width: var(--container); }
-
+/* ===== ABOUT: final single source of truth ===== */
 #about .section__header{
   max-width: 100% !important;
   width: 100% !important;
 }
-
 #about .about-intro{
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  text-align: justify !important;
-  text-justify: inter-word;
-  hyphens: auto;
+  display:block;
+  width:100%;
+  max-width:100%;
+  margin:0;
+  line-height:1.7;
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
 }
-#about .section__header{max-width:100% !important;width:100% !important;}
-#about .about-intro{max-width:100% !important;width:100% !important;margin:0 !important;text-align:justify !important;hyphens:auto;}
