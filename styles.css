@@ -219,10 +219,22 @@ input:focus,select:focus,textarea:focus{border-color:rgba(37,99,235,.55);box-sha
   }
 }
 
+/* Mobile logo size fix */
+@media (max-width: 740px) {
+  .brand__logo {
+    height: 120px !important;  /* make it big on mobile */
+    width: auto !important;
+    max-height: none !important;
+  }
 
+  .site-header,
+  .nav__inner {
+    min-height: 130px;         /* ensure header is tall enough */
+  }
 
-.contact-actions{
-  display:grid;
-  gap:12px;
-  margin-top:14px;
+  /* optional: a bit tighter spacing so menu fits */
+  .nav__inner {
+    gap: 10px;
+  }
 }
+
